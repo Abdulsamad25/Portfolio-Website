@@ -9,23 +9,28 @@
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>My Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navbar">
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      <div class="nav-links" id="navLinks">
+        <a class="links" href="#home">Home</a>
+        <a class="links" href="#about">About</a>
+        <a class="links" href="#projects">Projects</a>
+        <a class="links" href="#contact">Contact</a>
+      </div>
+      <div class="logo">
+        <p>PORTFOLIO</p> 
+      </div>
+    </nav>
   </header>
+  <div class="container">
+    <h1>YAHAYA <br> <span>ABDULSAMAD</span> </h1>
+  </div>
   <main>
-    <section id="about" class="container">
+    <section id="about" class="about">
       <h2>About Me</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
     </section>
-    <section id="projects" class="container">
+    <section id="projects" >
       <h2>My Projects</h2>
       <div class="project">
         <h3>Project Title</h3>
@@ -33,7 +38,7 @@
       </div>
       <!-- Add more projects as needed -->
     </section>
-    <section id="contact" class="container">
+    <section id="contact">
       <h2>Contact</h2>
       <form>
         <label for="name">Name:</label>
@@ -47,7 +52,7 @@
     </section>
   </main>
   <footer>
-    <div class="container">
+    <div class="">
       <p>&copy; 2023 My Portfolio. All rights reserved.</p>
     </div>
   </footer>
