@@ -1,39 +1,21 @@
-body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
+:root{
+  --base-color: white;
+  --base-variant:#e8e9ed;
+  --text-color:#111528;
+  --secondary-color:#232738;
+  --primary-color:#3a435d;
+  --accent-color:#0071ff;
 }
-
-body.dark-mode header {
-  background-color: #1e1e1e;
+.darkmode{
+  --base-color: #21243D;
+  --base-variant:#2c304d;
+  --text-color:#ffffff;
+  --secondary-color:#2c304d;
+  --primary-color:#3a435d;
+  --accent-color:#0071ff;
 }
-
-body.dark-mode .nav-links a {
-  color: #ffffff;
-}
-
-body.dark-mode .project {
-  background-color: #2d2d2d;
-}
-
-body.dark-mode .project-info h3,
-body.dark-mode .project-info p {
-  color: #ffffff;
-}
-
-body.dark-mode .info p {
-  color: #ffffff;
-}
-
-body.dark-mode .dark-mode-toggle i {
-  color: #ffffff;
-}
-
-.dark-mode-toggle {
-  cursor: pointer;
-  margin-left: 1rem;
-}
-
-.dark-mode-toggle i {
-  font-size: 1.5rem;
-  color: #333;
+body {
+  background-color: var(--base-color);
+  color: var(--text-color);
+  transition: background-color 0.5s, color 0.5s;
 }
