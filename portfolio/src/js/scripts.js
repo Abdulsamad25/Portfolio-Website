@@ -28,3 +28,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const hour = new Date().getHours();
+  if (hour >= 18 || hour < 6) {
+    document.body.classList.add('dark-mode');
+  }
+
+  const toggleIcon = document.querySelector('.dark-mode-toggle i');
+  toggleIcon.addEventListener('click', toggleDarkMode);
+});
+
+function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+  const toggleIcon = document.querySelector('.dark-mode-toggle i');
+  if (document.body.classList.contains('dark-mode')) {
+    toggleIcon.classList.remove('fa-moon');
+    toggleIcon.classList.add('fa-sun');
+  } else {
+    toggleIcon.classList.remove('fa-sun');
+    toggleIcon.classList.add('fa-moon');
+  }
+}

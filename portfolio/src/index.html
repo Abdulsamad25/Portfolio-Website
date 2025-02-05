@@ -5,57 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="js/scripts.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <header>
     <nav class="navbar">
       <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
       <div class="nav-links" id="navLinks">
+        <div class="close-icon" onclick="toggleMenu()">&#10005;</div>
         <a class="links" href="#home">Home</a>
         <a class="links" href="#about">About</a>
-        <a class="links" href="#projects">Projects</a>
+        <a class="links" href="#works">Works</a>
         <a class="links" href="#contact">Contact</a>
       </div>
-      <div class="logo">
-        <p>PORTFOLIO</p> 
-      </div>
+      <button type="button" id="theme-switch" title="Switch Theme">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </button>
     </nav>
   </header>
-  <div class="container">
-    <h1>YAHAYA <br> <span>ABDULSAMAD</span> </h1>
+  <div class="container" id="about">
+    <div class="info">
+      <h1>Hi, I am Abdulsamad, <span>Frontend Developer</span></h1>
+      <p>I am a passionate frontend developer with a knack for creating visually appealing and user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I strive to build responsive and interactive web applications that provide an excellent user experience. My goal is to continuously improve my skills and stay updated with the latest trends in web development.</p>
+      <a href="../assets/Abdulsamad_Resume.pdf" download class="resume-button"><button type="button">Download Resume</button></a>
+    </div>
+    <div class="image">
+      <img src="../assets/hero-imgg.JPG" alt="">
+    </div>
   </div>
   <main>
-    <section id="about" class="about">
-      <h2>About Me</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-    </section>
-    <section id="projects" >
-      <h2>My Projects</h2>
+    <section id="works" class="projects">
+      <h2>Featured Works</h2>
       <div class="project">
-        <h3>Project Title</h3>
-        <p>Project description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="project-container">
+          <div class="images">
+            <img src="../assets/MEDISYNC.png" alt="">
+          </div>
+          <div class="project-info">
+            <h3>Health Care Appointment System</h3>
+            <p>The Health Care Appointment System streamlines booking medical appointments. I handled the frontend using HTML, CSS, and JavaScript, while a backend engineer used PHP and MySQL for the server-side logic and database management, ensuring a smooth user experience.</p>
+        </div>
+        </div>
+        <div class="project">
+          <div class="project-container1">
+            <div class="images"> 
+              <img src="../assets/To-Do List.png" alt=""></div>
+              <div class="project-info">
+                <h3>To-Do List</h3>
+                <p>The To-Do List application is a simple yet powerful tool for managing tasks. I developed this project using React, which allowed me to create a dynamic and responsive user interface. The application features task creation, and deletion, providing users with an efficient way to organize their daily activities.</p>
+              </div> 
+          </div>
+          <div class="project">
+            <div class="project-container2">
+              <div class="images">
+                <img src="../assets/Rock, Paper and Scissors.png" alt="">
+               </div>
+                <div class="project-info">
+                  <h3>Rock, Paper and Scissors</h3>
+                  <p>The Rock, Paper, Scissors game is a fun and interactive web application. I developed this project using HTML, CSS, and JavaScript to create a responsive and engaging user experience. The game allows users to play against the computer, with the logic implemented in JavaScript to determine the winner based on the classic rules of Rock, Paper, Scissors.</p>
+                  <!-- <a href="#" class="project-button">View Project</a> -->
+                </div>
+            </div>
+         
       </div>
       <!-- Add more projects as needed -->
     </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
   </main>
-  <footer>
-    <div class="">
-      <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+  <footer id="contact">
+    <div class="container">
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
     </div>
+    <p>Copyright &copy; 2025. All rights reserved.</p>
   </footer>
-  <script src="js/scripts.js"></script>
+
 </body>
 </html>
