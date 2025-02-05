@@ -24,6 +24,10 @@
 .darkmode #theme-switch i:last-child{
   display: block;
 }
+.darkmode body{
+  background-color: #21243D;
+  color: #fff;
+}
 header {
   position: fixed;
   top: 0;
