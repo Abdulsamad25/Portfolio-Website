@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npx http-server ./dist",
-    "build": "mkdir -p dist && cp -r src/* dist/"
+    "build": "if [ -d src ]; then mkdir -p dist && cp -r src/* dist/; else echo 'src directory does not exist'; fi"
   },
   "author": "Abdulsamad",
   "license": "MIT",
