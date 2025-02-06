@@ -2,7 +2,6 @@
   "name": "portfolio-website",
   "version": "1.0.0",
   "description": "A portfolio website for Abdulsamad",
-  "main": "index.js",
   "scripts": {
     "start": "npx http-server ./dist",
     "build": "mkdir -p dist && if [ -d src ]; then cp -r src/* dist/; else echo 'src directory does not exist'; fi"
