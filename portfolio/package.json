@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A portfolio website for Abdulsamad",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server ./src",
+    "build": "echo 'No build step defined'"
+  },
+  "author": "Abdulsamad",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
