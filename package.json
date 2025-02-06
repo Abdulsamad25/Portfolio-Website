@@ -4,8 +4,8 @@
   "description": "A portfolio website for Abdulsamad",
   "main": "index.js",
   "scripts": {
-    "start": "npx http-server ./src",
-    "build": "echo 'No build step defined'"
+    "start": "npx http-server ./dist",
+    "build": "mkdir -p dist && cp -r src/* dist/"
   },
   "author": "Abdulsamad",
   "license": "MIT",
